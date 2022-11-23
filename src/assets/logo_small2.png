@@ -4,18 +4,18 @@
 <html class="" lang="en">
 <head prefix="og: http://ogp.me/ns#">
 <meta charset="utf-8">
-<title>src/assets/logo.png · master · gaetanHerve / rhythm-generator · GitLab</title>
+<title>src/assets/logo_small2.png · master · gaetanHerve / rhythm-generator · GitLab</title>
 <link rel="preload" href="/assets/application_utilities_dark-b086c681c469e89f39b1d18dbe3928791b5166b15848c9d503e3e25da2387e7b.css" as="style" type="text/css" nonce="XIiNAvm4g9qk66kglKaDFA==">
 <link rel="preload" href="/assets/application_dark-5a7ff541b9386982596044a0292a66de758e11587435b361ce586bf319135b11.css" as="style" type="text/css" nonce="XIiNAvm4g9qk66kglKaDFA==">
 <link rel="preload" href="/assets/highlight/themes/dark-561629dee52e0e73c9aa940e9cb99e51769e2812805a730cd9d344dd008a1064.css" as="style" type="text/css" nonce="XIiNAvm4g9qk66kglKaDFA==">
 <link crossorigin="" href="https://snowplow.trx.gitlab.net" rel="preconnect">
 
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
-<script nonce="o4PZ1EdhpSS7jQsLW0m/RQ==">
+<script nonce="q8Issk9rtRcYIHbtaje5eg==">
 //<![CDATA[
 var gl = window.gl || {};
-gl.startup_calls = {"/gaetanHerve/rhythm-generator/-/blob/master/src/assets/logo.png?format=json\u0026viewer=rich":{}};
-gl.startup_graphql_calls = [{"query":"query getBlobInfo(\n  $projectPath: ID!\n  $filePath: String!\n  $ref: String!\n  $shouldFetchRawText: Boolean!\n) {\n  project(fullPath: $projectPath) {\n    __typename\n    id\n    repository {\n      __typename\n      empty\n      blobs(paths: [$filePath], ref: $ref) {\n        __typename\n        nodes {\n          __typename\n          id\n          webPath\n          name\n          size\n          rawSize\n          rawTextBlob @include(if: $shouldFetchRawText)\n          fileType\n          language\n          path\n          blamePath\n          editBlobPath\n          gitpodBlobUrl\n          ideEditPath\n          forkAndEditPath\n          ideForkAndEditPath\n          codeNavigationPath\n          projectBlobPathRoot\n          forkAndViewPath\n          environmentFormattedExternalUrl\n          environmentExternalUrlForRouteMap\n          canModifyBlob\n          canCurrentUserPushToBranch\n          archived\n          storedExternally\n          externalStorage\n          externalStorageUrl\n          rawPath\n          replacePath\n          pipelineEditorPath\n          simpleViewer {\n            fileType\n            tooLarge\n            type\n            renderError\n          }\n          richViewer {\n            fileType\n            tooLarge\n            type\n            renderError\n          }\n        }\n      }\n    }\n  }\n}\n","variables":{"projectPath":"gaetanHerve/rhythm-generator","ref":"master","filePath":"src/assets/logo.png","shouldFetchRawText":false}}];
+gl.startup_calls = {"/gaetanHerve/rhythm-generator/-/blob/master/src/assets/logo_small2.png?format=json\u0026viewer=rich":{}};
+gl.startup_graphql_calls = [{"query":"query getBlobInfo(\n  $projectPath: ID!\n  $filePath: String!\n  $ref: String!\n  $shouldFetchRawText: Boolean!\n) {\n  project(fullPath: $projectPath) {\n    __typename\n    id\n    repository {\n      __typename\n      empty\n      blobs(paths: [$filePath], ref: $ref) {\n        __typename\n        nodes {\n          __typename\n          id\n          webPath\n          name\n          size\n          rawSize\n          rawTextBlob @include(if: $shouldFetchRawText)\n          fileType\n          language\n          path\n          blamePath\n          editBlobPath\n          gitpodBlobUrl\n          ideEditPath\n          forkAndEditPath\n          ideForkAndEditPath\n          codeNavigationPath\n          projectBlobPathRoot\n          forkAndViewPath\n          environmentFormattedExternalUrl\n          environmentExternalUrlForRouteMap\n          canModifyBlob\n          canCurrentUserPushToBranch\n          archived\n          storedExternally\n          externalStorage\n          externalStorageUrl\n          rawPath\n          replacePath\n          pipelineEditorPath\n          simpleViewer {\n            fileType\n            tooLarge\n            type\n            renderError\n          }\n          richViewer {\n            fileType\n            tooLarge\n            type\n            renderError\n          }\n        }\n      }\n    }\n  }\n}\n","variables":{"projectPath":"gaetanHerve/rhythm-generator","ref":"master","filePath":"src/assets/logo_small2.png","shouldFetchRawText":false}}];
 
 if (gl.startup_calls && window.fetch) {
   Object.keys(gl.startup_calls).forEach(apiCall => {
@@ -34,7 +34,7 @@ if (gl.startup_calls && window.fetch) {
   });
 }
 if (gl.startup_graphql_calls && window.fetch) {
-  const headers = {"X-CSRF-Token":"pIxV2KZ5IPvHfK8xm/kqh151ZD75eEhrNSYoWFp0yd/1uJdURHMbmJEv933idK5lHw+q+GZV68p7kZ18sl3KPw==","x-gitlab-feature-category":"source_code_management"};
+  const headers = {"X-CSRF-Token":"JavNOIfJQytBlKjlk+YVpiFc3pVfq1HQL6vZ+gNRbK10nw+0ZcN4SBfH8Knqa5FEYCYQU8CG8nFhHGze63hvTQ==","x-gitlab-feature-category":"source_code_management"};
   const url = `https://gitlab.com/api/graphql`
 
   const opts = {
@@ -74,7 +74,7 @@ if (gl.startup_graphql_calls && window.fetch) {
 
 
 <link rel="stylesheet" media="print" href="/assets/highlight/themes/dark-561629dee52e0e73c9aa940e9cb99e51769e2812805a730cd9d344dd008a1064.css" />
-<script nonce="o4PZ1EdhpSS7jQsLW0m/RQ==">
+<script nonce="q8Issk9rtRcYIHbtaje5eg==">
 //<![CDATA[
 document.querySelectorAll('link[media="print"]').forEach(linkTag => {
   linkTag.setAttribute('data-startupcss', 'loading');
@@ -85,31 +85,31 @@ document.querySelectorAll('link[media="print"]').forEach(linkTag => {
 //]]>
 </script>
 
-<script nonce="o4PZ1EdhpSS7jQsLW0m/RQ==">
+<script nonce="q8Issk9rtRcYIHbtaje5eg==">
 //<![CDATA[
 window.gon={};gon.features={"highlightJs":true,"fileLineBlame":false};
 //]]>
 </script>
 
 
-<script src="/assets/webpack/runtime.0d39b254.bundle.js" defer="defer" nonce="o4PZ1EdhpSS7jQsLW0m/RQ=="></script>
-<script src="/assets/webpack/main.ca7270fd.chunk.js" defer="defer" nonce="o4PZ1EdhpSS7jQsLW0m/RQ=="></script>
-<script src="/assets/webpack/sentry.a5f15489.chunk.js" defer="defer" nonce="o4PZ1EdhpSS7jQsLW0m/RQ=="></script>
+<script src="/assets/webpack/runtime.0d39b254.bundle.js" defer="defer" nonce="q8Issk9rtRcYIHbtaje5eg=="></script>
+<script src="/assets/webpack/main.ca7270fd.chunk.js" defer="defer" nonce="q8Issk9rtRcYIHbtaje5eg=="></script>
+<script src="/assets/webpack/sentry.a5f15489.chunk.js" defer="defer" nonce="q8Issk9rtRcYIHbtaje5eg=="></script>
 
 
-<script src="/assets/webpack/graphql.7a7c3f9d.chunk.js" defer="defer" nonce="o4PZ1EdhpSS7jQsLW0m/RQ=="></script>
-<script src="/assets/webpack/3.1ab44022.chunk.js" defer="defer" nonce="o4PZ1EdhpSS7jQsLW0m/RQ=="></script>
-<script src="/assets/webpack/shortcutsBundle.be12fa29.chunk.js" defer="defer" nonce="o4PZ1EdhpSS7jQsLW0m/RQ=="></script>
-<script src="/assets/webpack/5.5da1db57.chunk.js" defer="defer" nonce="o4PZ1EdhpSS7jQsLW0m/RQ=="></script>
-<script src="/assets/webpack/commons-pages.groups.boards-pages.groups.details-pages.groups.epic_boards-pages.groups.show-pages.gr-3e51f21e.86e6161a.chunk.js" defer="defer" nonce="o4PZ1EdhpSS7jQsLW0m/RQ=="></script>
-<script src="/assets/webpack/commons-pages.projects-pages.projects.activity-pages.projects.alert_management.details-pages.project-64ffade2.fa4fb658.chunk.js" defer="defer" nonce="o4PZ1EdhpSS7jQsLW0m/RQ=="></script>
-<script src="/assets/webpack/commons-pages.admin.subscriptions.show-pages.projects.blob.show-pages.projects.forks.new-pages.proje-a7b8e099.be1b1335.chunk.js" defer="defer" nonce="o4PZ1EdhpSS7jQsLW0m/RQ=="></script>
-<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.show-pages.projects.snippets.edit-pages.projects.sni-dd84f7c7.4964788f.chunk.js" defer="defer" nonce="o4PZ1EdhpSS7jQsLW0m/RQ=="></script>
-<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.show-pages.projects.snippets.show-pages.projects.tre-25c821a4.f3b16993.chunk.js" defer="defer" nonce="o4PZ1EdhpSS7jQsLW0m/RQ=="></script>
-<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.show-pages.projects.tree.show.f2c26e0c.chunk.js" defer="defer" nonce="o4PZ1EdhpSS7jQsLW0m/RQ=="></script>
-<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.tree.show-treeList.f3ffc0f7.chunk.js" defer="defer" nonce="o4PZ1EdhpSS7jQsLW0m/RQ=="></script>
-<script src="/assets/webpack/pages.projects.blob.show.3a5a3b05.chunk.js" defer="defer" nonce="o4PZ1EdhpSS7jQsLW0m/RQ=="></script>
-<script nonce="o4PZ1EdhpSS7jQsLW0m/RQ==">
+<script src="/assets/webpack/graphql.7a7c3f9d.chunk.js" defer="defer" nonce="q8Issk9rtRcYIHbtaje5eg=="></script>
+<script src="/assets/webpack/3.1ab44022.chunk.js" defer="defer" nonce="q8Issk9rtRcYIHbtaje5eg=="></script>
+<script src="/assets/webpack/shortcutsBundle.be12fa29.chunk.js" defer="defer" nonce="q8Issk9rtRcYIHbtaje5eg=="></script>
+<script src="/assets/webpack/5.5da1db57.chunk.js" defer="defer" nonce="q8Issk9rtRcYIHbtaje5eg=="></script>
+<script src="/assets/webpack/commons-pages.groups.boards-pages.groups.details-pages.groups.epic_boards-pages.groups.show-pages.gr-3e51f21e.86e6161a.chunk.js" defer="defer" nonce="q8Issk9rtRcYIHbtaje5eg=="></script>
+<script src="/assets/webpack/commons-pages.projects-pages.projects.activity-pages.projects.alert_management.details-pages.project-64ffade2.fa4fb658.chunk.js" defer="defer" nonce="q8Issk9rtRcYIHbtaje5eg=="></script>
+<script src="/assets/webpack/commons-pages.admin.subscriptions.show-pages.projects.blob.show-pages.projects.forks.new-pages.proje-a7b8e099.be1b1335.chunk.js" defer="defer" nonce="q8Issk9rtRcYIHbtaje5eg=="></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.show-pages.projects.snippets.edit-pages.projects.sni-dd84f7c7.4964788f.chunk.js" defer="defer" nonce="q8Issk9rtRcYIHbtaje5eg=="></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.show-pages.projects.snippets.show-pages.projects.tre-25c821a4.f3b16993.chunk.js" defer="defer" nonce="q8Issk9rtRcYIHbtaje5eg=="></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.show-pages.projects.tree.show.f2c26e0c.chunk.js" defer="defer" nonce="q8Issk9rtRcYIHbtaje5eg=="></script>
+<script src="/assets/webpack/commons-pages.projects.blob.show-pages.projects.tree.show-treeList.f3ffc0f7.chunk.js" defer="defer" nonce="q8Issk9rtRcYIHbtaje5eg=="></script>
+<script src="/assets/webpack/pages.projects.blob.show.3a5a3b05.chunk.js" defer="defer" nonce="q8Issk9rtRcYIHbtaje5eg=="></script>
+<script nonce="q8Issk9rtRcYIHbtaje5eg==">
 //<![CDATA[
 window.uploads_path = "/gaetanHerve/rhythm-generator/uploads";
 
@@ -119,14 +119,14 @@ window.uploads_path = "/gaetanHerve/rhythm-generator/uploads";
 </script>
 <meta content="object" property="og:type">
 <meta content="GitLab" property="og:site_name">
-<meta content="src/assets/logo.png · master · gaetanHerve / rhythm-generator · GitLab" property="og:title">
+<meta content="src/assets/logo_small2.png · master · gaetanHerve / rhythm-generator · GitLab" property="og:title">
 <meta content="Web page application for rhythmic practice" property="og:description">
 <meta content="https://gitlab.com/assets/twitter_card-570ddb06edf56a2312253c5872489847a0f385112ddbcd71ccfa1570febab5d2.jpg" property="og:image">
 <meta content="64" property="og:image:width">
 <meta content="64" property="og:image:height">
-<meta content="https://gitlab.com/gaetanHerve/rhythm-generator/-/blob/master/src/assets/logo.png" property="og:url">
+<meta content="https://gitlab.com/gaetanHerve/rhythm-generator/-/blob/master/src/assets/logo_small2.png" property="og:url">
 <meta content="summary" property="twitter:card">
-<meta content="src/assets/logo.png · master · gaetanHerve / rhythm-generator · GitLab" property="twitter:title">
+<meta content="src/assets/logo_small2.png · master · gaetanHerve / rhythm-generator · GitLab" property="twitter:title">
 <meta content="Web page application for rhythmic practice" property="twitter:description">
 <meta content="https://gitlab.com/assets/twitter_card-570ddb06edf56a2312253c5872489847a0f385112ddbcd71ccfa1570febab5d2.jpg" property="twitter:image">
 
@@ -135,15 +135,15 @@ window.uploads_path = "/gaetanHerve/rhythm-generator/uploads";
 <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
 <meta content="#303030" name="theme-color">
 <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="pfKbJvcaXZDZEWRxEEglmg/0MHSlwkHmMZ1JziLzATP0xlmqFRBm849CPD1pxaF4To7+sjrv4kd/KvzqytoC0w==" />
-<meta name="csp-nonce" content="o4PZ1EdhpSS7jQsLW0m/RQ==" />
+<meta name="csrf-token" content="KOA2jvKk1vYcLKVpghPfPCFwY8NuU7F1fTYJvP/maXl51PQCEK7tlUp//SX7nlveYAqtBfF+EtQzgbyYF89qmQ==" />
+<meta name="csp-nonce" content="q8Issk9rtRcYIHbtaje5eg==" />
 <meta name="action-cable-url" content="/-/cable" />
 <link rel="apple-touch-icon" type="image/x-icon" href="/assets/apple-touch-icon-b049d4bc0dd9626f31db825d61880737befc7835982586d015bded10b4435460.png" />
 <link href="/search/opensearch.xml" rel="search" title="Search GitLab" type="application/opensearchdescription+xml">
 
 
 
-<script nonce="o4PZ1EdhpSS7jQsLW0m/RQ==">
+<script nonce="q8Issk9rtRcYIHbtaje5eg==">
 //<![CDATA[
 ;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
 p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
@@ -153,7 +153,7 @@ n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","https://gitla
 window.snowplowOptions = {"namespace":"gl","hostname":"snowplow.trx.gitlab.net","cookieDomain":".gitlab.com","appId":"gitlab","formTracking":true,"linkClickTracking":true}
 
 gl = window.gl || {};
-gl.snowplowStandardContext = {"schema":"iglu:com.gitlab/gitlab_standard/jsonschema/1-0-8","data":{"environment":"production","source":"gitlab-rails","plan":"free","extra":{},"user_id":8082781,"namespace_id":10790005,"project_id":23981343,"context_generated_at":"2022-11-23T16:30:42.253Z"}}
+gl.snowplowStandardContext = {"schema":"iglu:com.gitlab/gitlab_standard/jsonschema/1-0-8","data":{"environment":"production","source":"gitlab-rails","plan":"free","extra":{},"user_id":8082781,"namespace_id":10790005,"project_id":23981343,"context_generated_at":"2022-11-23T16:30:51.409Z"}}
 gl.snowplowPseudonymizedPageUrl = "https://gitlab.com/namespace10790005/project23981343/-/blob/:repository_path";
 
 
@@ -162,9 +162,9 @@ gl.snowplowPseudonymizedPageUrl = "https://gitlab.com/namespace10790005/project2
 
 </head>
 
-<body class="gl-dark tab-width-8 gl-browser-firefox gl-platform-linux" data-find-file="/gaetanHerve/rhythm-generator/-/find_file/master" data-namespace-id="10790005" data-page="projects:blob:show" data-page-type-id="master/src/assets/logo.png" data-project="rhythm-generator" data-project-id="23981343">
+<body class="gl-dark tab-width-8 gl-browser-firefox gl-platform-linux" data-find-file="/gaetanHerve/rhythm-generator/-/find_file/master" data-namespace-id="10790005" data-page="projects:blob:show" data-page-type-id="master/src/assets/logo_small2.png" data-project="rhythm-generator" data-project-id="23981343">
 
-<script nonce="o4PZ1EdhpSS7jQsLW0m/RQ==">
+<script nonce="q8Issk9rtRcYIHbtaje5eg==">
 //<![CDATA[
 gl = window.gl || {};
 gl.client = {"isFirefox":true,"isLinux":true};
@@ -854,12 +854,12 @@ Usage Quotas
 <li><a href="/gaetanHerve">gaetanHerve</a><svg class="s8 breadcrumbs-list-angle" data-testid="chevron-lg-right-icon"><use href="/assets/icons-02e23cfb3d83e7293d7b4d2b457f8cd4cb75d3c78cfbedc946bf90bf97c2ed73.svg#chevron-lg-right"></use></svg></li> <li><a href="/gaetanHerve/rhythm-generator"><span class="breadcrumb-item-text js-breadcrumb-item-text">rhythm-generator</span></a><svg class="s8 breadcrumbs-list-angle" data-testid="chevron-lg-right-icon"><use href="/assets/icons-02e23cfb3d83e7293d7b4d2b457f8cd4cb75d3c78cfbedc946bf90bf97c2ed73.svg#chevron-lg-right"></use></svg></li>
 
 <li data-qa-selector="breadcrumb_current_link" data-testid="breadcrumb-current-link">
-<a href="/gaetanHerve/rhythm-generator/-/blob/master/src/assets/logo.png">Repository</a>
+<a href="/gaetanHerve/rhythm-generator/-/blob/master/src/assets/logo_small2.png">Repository</a>
 </li>
 </ul>
 </div>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"gaetanHerve","item":"https://gitlab.com/gaetanHerve"},{"@type":"ListItem","position":2,"name":"rhythm-generator","item":"https://gitlab.com/gaetanHerve/rhythm-generator"},{"@type":"ListItem","position":3,"name":"Repository","item":"https://gitlab.com/gaetanHerve/rhythm-generator/-/blob/master/src/assets/logo.png"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"gaetanHerve","item":"https://gitlab.com/gaetanHerve"},{"@type":"ListItem","position":2,"name":"rhythm-generator","item":"https://gitlab.com/gaetanHerve/rhythm-generator"},{"@type":"ListItem","position":3,"name":"Repository","item":"https://gitlab.com/gaetanHerve/rhythm-generator/-/blob/master/src/assets/logo_small2.png"}]}
 
 </script>
 
@@ -874,7 +874,7 @@ Usage Quotas
 
 
 
-<div class="js-signature-container" data-signatures-path="/gaetanHerve/rhythm-generator/-/commits/84a95f4b9ed797e7cd05db82b38c45f7d05bdd09/signatures?limit=1"></div>
+<div class="js-signature-container" data-signatures-path="/gaetanHerve/rhythm-generator/-/commits/f9d55577c5bbfd6a7ac0d960033de83f54376b90/signatures?limit=1"></div>
 
 <div class="tree-holder" id="tree-holder">
 <div class="nav-block">
@@ -882,7 +882,7 @@ Usage Quotas
 <div class="tree-ref-holder">
 <form class="project-refs-form" action="/gaetanHerve/rhythm-generator/-/refs/switch" accept-charset="UTF-8" method="get"><input type="hidden" name="destination" id="destination" value="blob" autocomplete="off" />
 <div class="dropdown">
-<button class="dropdown-menu-toggle js-project-refs-dropdown" type="button" data-toggle="dropdown" data-selected="master/src/assets/logo.png" data-ref="master" data-refs-url="/gaetanHerve/rhythm-generator/refs?sort=updated_desc" data-field-name="ref" data-submit-form-on-click="true" data-visit="true" data-qa-selector="branches_dropdown" data-testid="branches-select"><span class="dropdown-toggle-text ">master/src/assets/logo.png</span><svg class="s16 dropdown-menu-toggle-icon gl-top-3" data-testid="chevron-down-icon"><use href="/assets/icons-02e23cfb3d83e7293d7b4d2b457f8cd4cb75d3c78cfbedc946bf90bf97c2ed73.svg#chevron-down"></use></svg></button>
+<button class="dropdown-menu-toggle js-project-refs-dropdown" type="button" data-toggle="dropdown" data-selected="master/src/assets/logo_small2.png" data-ref="master" data-refs-url="/gaetanHerve/rhythm-generator/refs?sort=updated_desc" data-field-name="ref" data-submit-form-on-click="true" data-visit="true" data-qa-selector="branches_dropdown" data-testid="branches-select"><span class="dropdown-toggle-text ">master/src/assets/logo_small2.png</span><svg class="s16 dropdown-menu-toggle-icon gl-top-3" data-testid="chevron-down-icon"><use href="/assets/icons-02e23cfb3d83e7293d7b4d2b457f8cd4cb75d3c78cfbedc946bf90bf97c2ed73.svg#chevron-down"></use></svg></button>
 <div class="dropdown-menu dropdown-menu-selectable git-revision-dropdown dropdown-menu-paging" data-qa-selector="branches_dropdown_content">
 <div class="dropdown-page-one">
 <div class="dropdown-title gl-display-flex"><span class="gl-ml-auto">Switch branch/tag</span><button class="dropdown-title-button dropdown-menu-close gl-ml-auto" aria-label="Close" type="button"><svg class="s16 dropdown-menu-close-icon" data-testid="close-icon"><use href="/assets/icons-02e23cfb3d83e7293d7b4d2b457f8cd4cb75d3c78cfbedc946bf90bf97c2ed73.svg#close"></use></svg></button></div>
@@ -905,41 +905,42 @@ Usage Quotas
 <a href="/gaetanHerve/rhythm-generator/-/tree/master/src/assets">assets</a>
 </li>
 <li class="breadcrumb-item">
-<a href="/gaetanHerve/rhythm-generator/-/blob/master/src/assets/logo.png"><strong>logo.png</strong>
+<a href="/gaetanHerve/rhythm-generator/-/blob/master/src/assets/logo_small2.png"><strong>logo_small2.png</strong>
 </a></li>
 </ul>
 </div>
 <div class="tree-controls gl-children-ml-sm-3"><a class="gl-button btn btn-default shortcuts-find-file" rel="nofollow" href="/gaetanHerve/rhythm-generator/-/find_file/master">Find file
-</a><a class="gl-button btn btn-default" href="/gaetanHerve/rhythm-generator/-/commits/master/src/assets/logo.png">History</a><a class="gl-button btn btn-default js-data-file-blob-permalink-url" href="/gaetanHerve/rhythm-generator/-/blob/fdd8ec8013be61e469ad3984deb9e49cf1809c0d/src/assets/logo.png">Permalink</a></div>
+</a><a class="gl-button btn btn-default" href="/gaetanHerve/rhythm-generator/-/commits/master/src/assets/logo_small2.png">History</a><a class="gl-button btn btn-default js-data-file-blob-permalink-url" href="/gaetanHerve/rhythm-generator/-/blob/fdd8ec8013be61e469ad3984deb9e49cf1809c0d/src/assets/logo_small2.png">Permalink</a></div>
 </div>
 
 <div class="info-well d-none d-sm-block">
 <div class="well-segment">
 <ul class="blob-commit-info">
-<li class="commit flex-row js-toggle-container" id="commit-84a95f4b">
+<li class="commit flex-row js-toggle-container" id="commit-f9d55577">
 <div class="avatar-cell d-none d-sm-block">
 <a href="/gaetanHerve"><img alt="gaetanHerve&#39;s avatar" src="https://secure.gravatar.com/avatar/9c1d8dcc7b4e7ee05023a05c39769f1f?s=80&amp;d=identicon" class="avatar s40 d-none d-sm-inline-block" title="gaetanHerve" /></a>
 </div>
 <div class="commit-detail flex-list gl-display-flex gl-justify-content-space-between gl-align-items-flex-start gl-flex-grow-1 gl-min-w-0">
 <div class="commit-content" data-qa-selector="commit_content">
-<a class="commit-row-message item-title js-onboarding-commit-item " href="/gaetanHerve/rhythm-generator/-/commit/84a95f4b9ed797e7cd05db82b38c45f7d05bdd09">Initial commit</a>
+<a class="commit-row-message item-title js-onboarding-commit-item " href="/gaetanHerve/rhythm-generator/-/commit/f9d55577c5bbfd6a7ac0d960033de83f54376b90">add CI configuration files - 2</a>
 <span class="commit-row-message d-inline d-sm-none">
 &middot;
-84a95f4b
+f9d55577
 </span>
 <div class="committer">
-<a class="commit-author-link js-user-link" data-user-id="8082781" href="/gaetanHerve">gaetanHerve</a> authored <time class="js-timeago" title="Jan 28, 2021 7:33am" datetime="2021-01-28T07:33:30Z" data-toggle="tooltip" data-placement="bottom" data-container="body">Jan 28, 2021</time>
+<a class="commit-author-link js-user-link" data-user-id="8082781" href="/gaetanHerve">gaetanHerve</a> authored <time class="js-timeago" title="Mar 1, 2021 9:24am" datetime="2021-03-01T09:24:05Z" data-toggle="tooltip" data-placement="bottom" data-container="body">Mar 01, 2021</time>
 </div>
 
 </div>
 <div class="commit-actions flex-row">
 
-<div class="js-commit-pipeline-status" data-endpoint="/gaetanHerve/rhythm-generator/-/commit/84a95f4b9ed797e7cd05db82b38c45f7d05bdd09/pipelines?ref=master"></div>
+<a class="ci-status-link ci-status-icon-success d-inline-flex " title="Pipeline: passed" data-toggle="tooltip" data-placement="left" data-container="body" href="/gaetanHerve/rhythm-generator/-/commit/f9d55577c5bbfd6a7ac0d960033de83f54376b90/pipelines?ref=master"><svg class="s24" data-testid="status_success-icon"><use href="/assets/icons-02e23cfb3d83e7293d7b4d2b457f8cd4cb75d3c78cfbedc946bf90bf97c2ed73.svg#status_success"></use></svg></a>
+<div class="js-commit-pipeline-status" data-endpoint="/gaetanHerve/rhythm-generator/-/commit/f9d55577c5bbfd6a7ac0d960033de83f54376b90/pipelines?ref=master"></div>
 <div class="commit-sha-group btn-group d-none d-sm-flex">
 <div class="label label-monospace monospace">
-84a95f4b
+f9d55577
 </div>
-<button class="btn gl-button btn btn-default btn-icon" data-toggle="tooltip" data-placement="bottom" data-container="body" data-title="Copy commit SHA" data-class="gl-button btn btn-default btn-icon" data-clipboard-text="84a95f4b9ed797e7cd05db82b38c45f7d05bdd09" type="button" title="Copy commit SHA" aria-label="Copy commit SHA" aria-live="polite"><svg class="s16 gl-icon" data-testid="copy-to-clipboard-icon"><use href="/assets/icons-02e23cfb3d83e7293d7b4d2b457f8cd4cb75d3c78cfbedc946bf90bf97c2ed73.svg#copy-to-clipboard"></use></svg></button>
+<button class="btn gl-button btn btn-default btn-icon" data-toggle="tooltip" data-placement="bottom" data-container="body" data-title="Copy commit SHA" data-class="gl-button btn btn-default btn-icon" data-clipboard-text="f9d55577c5bbfd6a7ac0d960033de83f54376b90" type="button" title="Copy commit SHA" aria-label="Copy commit SHA" aria-live="polite"><svg class="s16 gl-icon" data-testid="copy-to-clipboard-icon"><use href="/assets/icons-02e23cfb3d83e7293d7b4d2b457f8cd4cb75d3c78cfbedc946bf90bf97c2ed73.svg#copy-to-clipboard"></use></svg></button>
 
 </div>
 </div>
@@ -948,21 +949,21 @@ Usage Quotas
 
 </ul>
 </div>
-<div data-blob-path="src/assets/logo.png" data-branch="master" data-project-path="gaetanHerve/rhythm-generator" id="js-code-owners"></div>
+<div data-blob-path="src/assets/logo_small2.png" data-branch="master" data-project-path="gaetanHerve/rhythm-generator" id="js-code-owners"></div>
 
 </div>
 <div class="blob-content-holder js-per-page" data-blame-per-page="1000" id="blob-content-holder">
-<div data-blob-path="src/assets/logo.png" data-original-branch="master" data-project-path="gaetanHerve/rhythm-generator" data-target-branch="master" id="js-view-blob-app">
+<div data-blob-path="src/assets/logo_small2.png" data-original-branch="master" data-project-path="gaetanHerve/rhythm-generator" data-target-branch="master" id="js-view-blob-app">
 <div class="gl-spinner-container" role="status"><span aria-label="Loading" class="gl-spinner gl-spinner-md gl-spinner-dark gl-vertical-align-text-bottom!"></span></div>
 </div>
 </div>
 
 </div>
 
-<script nonce="o4PZ1EdhpSS7jQsLW0m/RQ==">
+<script nonce="q8Issk9rtRcYIHbtaje5eg==">
 //<![CDATA[
   window.gl = window.gl || {};
-  window.gl.webIDEPath = '/-/ide/project/gaetanHerve/rhythm-generator/edit/master/-/src/assets/logo.png'
+  window.gl.webIDEPath = '/-/ide/project/gaetanHerve/rhythm-generator/edit/master/-/src/assets/logo_small2.png'
 
 
 //]]>
@@ -982,7 +983,7 @@ Usage Quotas
 
 
 
-<script nonce="o4PZ1EdhpSS7jQsLW0m/RQ==">
+<script nonce="q8Issk9rtRcYIHbtaje5eg==">
 //<![CDATA[
 if ('loading' in HTMLImageElement.prototype) {
   document.querySelectorAll('img.lazy').forEach(img => {
@@ -1003,7 +1004,7 @@ if ('loading' in HTMLImageElement.prototype) {
 
 //]]>
 </script>
-<script nonce="o4PZ1EdhpSS7jQsLW0m/RQ==">
+<script nonce="q8Issk9rtRcYIHbtaje5eg==">
 //<![CDATA[
 gl = window.gl || {};
 gl.experiments = {};
