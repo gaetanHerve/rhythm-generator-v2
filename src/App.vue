@@ -1,14 +1,14 @@
 <template>
-  <Score />
+  <Rhythm />
 </template>
 
 <script>
-import Score from './components/Score.vue'
+import Rhythm from './views/Rhythm.vue'
 
 export default {
   name: 'App',
   components: {
-    Score
+    Rhythm
   }
 }
 </script>
