@@ -16,6 +16,7 @@ export default new Vuex.Store({
     setTimeSignature(state, signature) {
       state.timeSignature = {
         numBeats: signature.numBeats,
+        
         beatValue: signature.beatValue,
       };
     }

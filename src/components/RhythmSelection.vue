@@ -1,9 +1,8 @@
-/* eslint-disable prettier/prettier */
 <template>
-  <div class="container">
+  <div class="w3-card-2">
     <div class="row">
-      <div id="timeSignature">
-        <label for="numBeats"  style="font-weight: bold; display:block">Métrique : </label>
+      <div id="timeSignature" class="option-element">
+        <label for="numBeats" style="font-weight: bold;display: block">Métrique : </label>
         <input
           type="number"
           id="numBeats"
@@ -62,7 +61,7 @@
 
     <div class="row">
       <div class="option-element">
-        <label class="option-element" for="minimalValue"> Valeur minimale : </label>
+        <label style="font-weight: bold;display: block" for="minimalValue"> Valeur minimale : </label>
         <select
           id="minimalValue"
           v-model="rhythmDataDTO.options.minimalValue"
@@ -79,6 +78,7 @@
       </div>
     </div>
 
+    <hr>
     <div class="row">
       <div class="option-element">
         <input id="dots" type="checkbox" v-model="rhythmDataDTO.options.dots" />
@@ -153,22 +153,7 @@
 export default {
   name: 'RhythmSelection',
   props: {
-    rhythmData: Object/* {
-      signature: {
-        numBeats: Number,
-        beatValue: Number,
-      },
-      options: {
-        dots: Boolean,
-        tuplets: Boolean,
-        tupletsRatio: Number,
-        minimalValue: Number,
-        ternary: Boolean,
-        rests: Boolean,
-        restsRatio: Number,
-      },
-      numBars: Number,
-    } */,
+    rhythmData: Object
   },
   data() {
     return {
@@ -192,7 +177,6 @@ export default {
   // TODO: use observer pattern on rhythmDataDTO instead of adding @change on input tags
   methods: {
     updateRhytmData() {
-      console.log('emitting: ', this.rhythmDataDTO);
       this.$emit("rhythmDataDto", this.rhythmDataDTO);
     },
     changeSignature: function() {
@@ -273,6 +257,8 @@ input[type='checkbox'] {
 }
 
 .option-element {
+  text-align: left;
+  margin-left: 5px;
   min-width: 200px;
   max-width: 225px;
 }

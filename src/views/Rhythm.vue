@@ -1,61 +1,54 @@
 <template>
-  <div class="Rhythm container">
-    <button @click="logRhythmData">log rhythmData</button>
-    <div class="row">
-      <div class="col-2 option-element mb-2 mt-2" style="width:225px">
-        <img alt="logo" src="../assets/logo_small2.png" class="img-fluid" />
+  <div class="w3-container">
+    <div>
+      <div class="w3-half" style="width:225px">
+        <img alt="logo" src="@/assets/logo_small2.png" class="img-fluid" />
       </div>
-      <div class="col-2">
+      <div>
         <button
-          class="btn btn-light btn-circle btn-lg"
-          v-on:click="displayOptions"
-          style="margin:10px"
+          class="w3-btn w3-round w3-white w3-border w3-border-teal"
+          @click="displayOptions"
         >
-        <span class="glyphicon glyphicon-cog"></span>
-          <!-- {{ optBtnTxt }} -->
+          {{ optBtnTxt }}
         </button>
       </div>
       
     </div>
     
-    <div class="row">
-      <transition name="fade">
-        <div
-          id="selectionComponent"
-          class="col-3"
-          v-if="optVisible"
-          style="width:225px"
-        >
-          <RhythmSelection
-            :rhythmData="rhythmData"
-            @rhythm-data-dto="(data) => rhythmData = data"
-          /> 
-        </div>
-      </transition>
-      <transition name="fade">
-        <div
-          id="displayComponent"
-          v-bind:class="displayComponentWidth"
-          style="margin:0px"
-          v-bind:style="{ left:leftPos }"
-        >
-        <!-- v-bind:class="[optVisible ? 'col-9' : 'col-12']" -->
-          <Score :rhythmData="rhythmData" />
-        </div>
-      </transition>
+      <div
+        id="rythmSelectionSection"
+        :class="optBtnClass"
+        v-if="optVisible"
+        style="width:225px"
+      >
+        <RhythmSelection
+          :rhythmData="rhythmData"
+          @rhythm-data-dto="(data) => rhythmData = data"
+        /> 
+      </div>
+
+      <!-- <div
+        id="displayComponent"
+        v-bind:class="displayComponentWidth"
+        style="margin:0px"
+        v-bind:style="{ left:leftPos }"
+      >
+      v-bind:class="[optVisible ? 'col-9' : 'col-12']"
+        <Score :rhythmData="rhythmData" />
+      </div> -->
+
     </div>
-  </div>
 </template>
 
 <script>
-import Score from '@/components/Score.vue';
+// import Score from '@/components/Score.vue';
 import RhythmSelection from '@/components/RhythmSelection.vue';
 
 export default {
   name: 'Rhythm',
   components: {
     RhythmSelection,
-    Score,
+    // Score,
   },
   props: {
     tupletsTest: Boolean,
@@ -80,22 +73,20 @@ export default {
       },
       optVisible: false,
       optBtnTxt: 'Options',
+      optBtnClass: 'w3-animate-top',
       displayComponentWidth: 'col-9',
       leftPos: '250px',
     };
   },
   methods: {
-    logRhythmData() {
-      console.log('receiving: ', this.rhythmData);
-    },
     //TODO : manage to get animation on sequence display
     displayOptions: function() {
       setTimeout(this.optionManager, 0);
-      console.log(this.rhythmData)
     },
     optionManager: function() {
       this.optVisible = !this.optVisible;
       this.optBtnTxt = this.optVisible ? 'Masquer' : 'Options';
+      this.optBtnClass = this.optVisible ? 'w3-animate-top' : 'w3-animate-right';
     },
   },
 };
@@ -143,30 +134,4 @@ input[type='checkbox'] {
 .option-element {
   min-width: 225px;
 }
-
-.fade-enter-active, .fade-leave-active {
-  transition: transform .5s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  transform: translateX(-225px);
-}
-
-.fade-enter-to,
-.fade-leave {
-  transform: translateX(0);
-}
-
-.btn-circle.btn-lg { 
-  width: 50px; 
-  height: 50px; 
-  padding: 10px 16px; 
-  border-radius: 25px; 
-  font-size: 12px; 
-  text-align: center; 
-}
-
-.btn:hover {
-  background-color: RoyalBlue;
-}
-
 </style>
