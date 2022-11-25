@@ -1,5 +1,4 @@
 <template>
-  <div class="w3-card-2">
     <div class="row">
       <div id="timeSignature" class="option-element">
         <label for="numBeats" style="font-weight: bold;display: block">Métrique : </label>
@@ -145,8 +144,6 @@
         </div>
       </div> 
     </div>
-
-  </div>
 </template>
 
 <script>
@@ -177,7 +174,7 @@ export default {
   // TODO: use observer pattern on rhythmDataDTO instead of adding @change on input tags
   methods: {
     updateRhytmData() {
-      this.$emit("rhythmDataDto", this.rhythmDataDTO);
+      this.$emit("rhythmDatadto", this.rhythmDataDTO);
     },
     changeSignature: function() {
       this.adaptMinimalValue();
@@ -216,57 +213,27 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-.inlineDisplay {
-  display: inline-block;
-}
-
 input[type='number'] {
   margin: 5px;
-  margin-left:0px;
   width: 50px;
 }
-
-input[type='radio'] {
-  margin-right: 5px;
-}
-
 input[type='checkbox'] {
   vertical-align: middle;
   align-content: start;
   margin-right: 5px;
 }
-
 .slider-wrapper {
   display: inline-block;
   width: 50%;
-  padding: 0;
 }
-
 .option-element {
   text-align: left;
   margin-left: 5px;
-  min-width: 200px;
-  max-width: 225px;
+  width: 180px;
 }
-
 .note-icons {
   font-family: "Musisync-KVLZ";
 }
-
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }

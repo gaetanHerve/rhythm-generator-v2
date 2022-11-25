@@ -1,5 +1,5 @@
 <template>
-  <Rhythm class="w3-row" />
+  <Rhythm />
 </template>
 
 <script>
