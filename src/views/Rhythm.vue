@@ -1,29 +1,35 @@
 <template>
-  <div class="w3-display-container">
+<div class="w3-row">
 
-    <div id="optSection" class="w3-display-topleft">
-      <div>
-        <button
-          class="w3-btn w3-round w3-white w3-border w3-border-teal"
-          @click="displayOptions"
-        >
-          {{ optBtnTxt }}
-        </button>
-      </div>
-
-      <div v-show="optVisible" id="optPanelSection" class="w3-animate-left">
-        <RhythmSelection
-          :rhythmData="rhythmData"
-          @rhythm-data-dto="(data) => rhythmData = data"
-        /> 
-      </div>
-    </div>
-
-    <div id="scoreSection" class="w3-middle">
-      <Score :rhythmData="rhythmData" />
-    </div>
-
+  <div id="optSection" class="w3-col m3">
+      <button
+        class="w3-btn w3-round w3-white w3-border w3-border-teal"
+        @click="displayOptions"
+      >
+        {{ optBtnTxt }}
+      </button>
   </div>
+
+  <div id="logoSection" class="w3-col m6">
+    <img alt="logo" src="@/assets/logo_small2.png" style="width:225px" />
+  </div>
+
+</div>
+
+<div class="w3-row">
+  <div v-show="optVisible" id="optPanelSection" class="w3-col m3">
+    <RhythmSelection
+      :rhythmData="rhythmData"
+      @rhythm-data-dto="(data) => rhythmData = data"
+    /> 
+  </div>
+
+  <div id="scoreSection" class="w3-col m9">
+    <Score :rhythmData="rhythmData" />
+  </div>
+
+</div>
+
 </template>
 
 <script>
@@ -88,12 +94,16 @@ a {
 }
 #optPanelSection {
   max-width: 225px;
-  margin-top: 5px;
+  margin-left: 15px;
+}
+
+#optSection, #logoSection {
+  margin: 15px;
+  text-align: left;
 }
 
 #optSection {
-  margin-left: 15px;
-  text-align: left;
+  margin-top: 50px
 }
 
 .inlineDisplay {
