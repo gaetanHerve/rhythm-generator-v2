@@ -1,5 +1,5 @@
 <template>
-
+  <h1>SCORE</h1>
 </template>
 
 <script>
@@ -24,4 +24,8 @@ li {
 a {
   color: #42b983;
 }
+/* @font-face {
+  font-family: "Musisync-KVLZ";
+  src: local("Musisync-KVLZ"),   url(./fonts/Musisync/Musisync-KVLZ.ttf) format("truetype");
+} */
 </style>

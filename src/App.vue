@@ -1,14 +1,17 @@
 <template>
-  <Score />
+  <div id="logoSection" class="w3-row">
+    <img alt="logo" src="@/assets/logo_small2.png" style="scale:50%" />
+  </div>
+  <Rhythm class="w3-row" />
 </template>
 
 <script>
-import Score from './components/Score.vue'
+import Rhythm from './views/Rhythm.vue'
 
 export default {
   name: 'App',
   components: {
-    Score
+    Rhythm
   }
 }
 </script>
@@ -20,6 +23,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
 }
+
 </style>
