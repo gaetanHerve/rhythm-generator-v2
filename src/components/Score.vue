@@ -56,18 +56,9 @@ export default {
     display(sequence) {
       this.clearBox('displaySection');
       this.adaptBarWidth(this.windowDims, this.sizeReduction);
-
-      // Generating divs for displaying sequence
-      let parentDiv = document.getElementById("displaySection");
-      let nbLines = this.rhythmData.numBars / this.nbBarsPerLine;
-      for(let i = 0; i < nbLines; i++) {
-        let newDiv = document.createElement('div');
-        newDiv.className = 'displayLine';
-        newDiv.style = "align-content:start";
-        parentDiv.appendChild(newDiv);
-      }
+      this.setDisplaySection();
       
-      let displayDivs = document.getElementsByClassName("displayLine");
+      const displayDivs = document.getElementsByClassName("displayLine");
       let div;
       let renderer;
       let context;
@@ -100,6 +91,7 @@ export default {
           index,
           displaySignature
         );
+        
         displaySignature = false;
         let formattedNotes = vexSrvc.getFormattedNotes(Vex.Flow, bar, this.rhythmData.options);
         // Connect it to the rendering context and draw!
@@ -120,6 +112,17 @@ export default {
         }
       });
       this.$emit('sequenceGenerated', true);
+    },
+    setDisplaySection() {
+      // Generating divs for displaying sequence
+      let parentDiv = document.getElementById("displaySection");
+      let nbLines = this.rhythmData.numBars / this.nbBarsPerLine;
+      for(let i = 0; i < nbLines; i++) {
+        let newDiv = document.createElement('div');
+        newDiv.className = 'displayLine';
+        newDiv.style = "align-content:start";
+        parentDiv.appendChild(newDiv);
+      }
     },
     adaptBarWidth(wDims, sizeReduction) {
       let options = this.rhythmData.options; 
