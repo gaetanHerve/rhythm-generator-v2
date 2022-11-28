@@ -151,7 +151,6 @@ export default {
       },
     };
   },
-  // TODO: use observer pattern on rhythmDataDTO instead of adding @change on input tags
   methods: {
     updateRhytmData() {
       this.$emit("rhythmdatadto", this.rhythmDataDTO);
