@@ -79,7 +79,7 @@ export default {
 <style scoped>
 #optPanelSection {
   width: 200px;
-  height: 325px;
+  height: 350px;
   margin-left: 15px;
 }
 #showOptions, #logoSection #generate #scoreSection {
