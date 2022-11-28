@@ -132,6 +132,7 @@
 <script>
 export default {
   name: 'RhythmSelection',
+  emits: ["rhythmdatadto"],
   props: {
     rhythmData: Object
   },
@@ -153,7 +154,7 @@ export default {
   // TODO: use observer pattern on rhythmDataDTO instead of adding @change on input tags
   methods: {
     updateRhytmData() {
-      this.$emit("rhythmDatadto", this.rhythmDataDTO);
+      this.$emit("rhythmdatadto", this.rhythmDataDTO);
     },
     changeSignature() {
       this.adaptMinimalValue();

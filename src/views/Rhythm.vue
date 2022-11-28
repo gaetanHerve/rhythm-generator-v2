@@ -21,7 +21,7 @@
 
   <div class="w3-row">
     <div v-show="optVisible" id="optPanelSection" class="w3-sidebar w3-card-2 w3-bar-block w3-animate-left">
-      <RhythmSelection :rhythmData="rhythmData" @rhythm-datadto="(data) => rhythmData = data" />
+      <RhythmSelection :rhythmData="rhythmData" @rhythmdatadto="(data) => rhythmData = data" />
     </div>
 
     <div id="scoreSection">
