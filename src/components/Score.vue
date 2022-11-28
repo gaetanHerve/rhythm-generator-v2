@@ -16,39 +16,46 @@ export default {
   name: 'Score',
   props: {
     rhythmData: Object,
-    generateSequence: Boolean,
+    newSequence: Boolean,
+    windowDims: Object,
   },
   data() {
     return {
-      displayed: false,
       barWidth: 400,
       nbBarsPerLine: 1,
       sizeReduction: 20,
+      sequence: null,
+      signature: null,
     };
   },
   watch: {
-    generateSequence() {
-      this.displaySequence();
-    }
+    newSequence() {
+      this.generateSequence();
+      this.display(this.sequence);
+    },
+    windowDims() {
+      if (this.sequence) {
+        this.clearBox("displaySection");
+        this.display(this.sequence);
+      }
+    },
   },
   methods: {
-    displaySequence() {
-      console.log("DISPLAYING SEQUENCE");
-      let signature = new TimeSignature();
-      signature.numBeats = this.rhythmData.signature.numBeats;
-      signature.beatValue = this.rhythmData.signature.beatValue;
+    generateSequence() {
+      this.signature = new TimeSignature();
+      this.signature.numBeats = this.rhythmData.signature.numBeats;
+      this.signature.beatValue = this.rhythmData.signature.beatValue;
       let minimalValue = this.rhythmData.options.minimalValue;
-      this.clearBox('displaySection');
-      let sequence = sequenceSrvc.generateSequence(
+      this.sequence = sequenceSrvc.generateSequence(
         minimalValue,
-        signature,
+        this.signature,
         this.rhythmData.numBars,
         this.rhythmData.options
       );
-      this.displayed = true;
-
-      const wDims = this.getWindowDims();
-      this.adaptBarWidth(wDims, this.sizeReduction);
+    },
+    display(sequence) {
+      this.clearBox('displaySection');
+      this.adaptBarWidth(this.windowDims, this.sizeReduction);
 
       // Generating divs for displaying sequence
       let parentDiv = document.getElementById("displaySection");
@@ -76,7 +83,7 @@ export default {
           // Create an SVG renderer and attach it to a DIV element
           renderer = new Renderer(div, Renderer.Backends.SVG);
           // Size our SVG:
-          renderer.resize(wDims.width, 100); // initial value: 200
+          renderer.resize(this.windowDims.width, 100); // initial value: 200
           // And get a drawing context:
           context = renderer.getContext();
           displayIndex++;
@@ -87,7 +94,7 @@ export default {
         
         var stave = vexSrvc.getConfiguredStave(
           Vex.Flow,
-          signature,
+          this.signature,
           position,
           this.barWidth,
           index,
@@ -113,17 +120,6 @@ export default {
         }
       });
       this.$emit('sequenceGenerated', true);
-    },
-    getWindowDims() {
-      const width =
-        window.innerWidth ||
-        document.documentElement.clientWidth ||
-        document.body.clientWidth;
-      const height =
-        window.innerHeight ||
-        document.documentElement.clientHeight ||
-        document.body.clientHeight;
-      return {width: width, height: height};
     },
     adaptBarWidth(wDims, sizeReduction) {
       let options = this.rhythmData.options; 
