@@ -14,7 +14,7 @@
     <div id="generate" class="w3-col m2">
       <button
         class="w3-btn w3-round w3-teal"
-        @click="generateSequence=true"
+        @click="newSequence=true"
       > Générer </button>
     </div>
   </div>
@@ -25,7 +25,12 @@
     </div>
 
     <div id="scoreSection">
-      <Score :rhythmData="rhythmData" :generateSequence="generateSequence" @sequence-generated="generateSequence = false"/>
+      <Score
+        :rhythmData="rhythmData"
+        :newSequence="newSequence"
+        :windowDims="windowDims"
+        @sequence-generated="newSequence = false"
+      />
     </div>
   </div>
 </template>
@@ -63,13 +68,31 @@ export default {
       },
       optVisible: false,
       optBtnTxt: 'Options',
-      generateSequence: false,
+      newSequence: false,
+      windowDims: null,
     };
+  },
+  created() {
+    this.windowDims = this.getWindowDims();
+    window.addEventListener('resize', () => {
+      this.windowDims = this.getWindowDims();
+    });
   },
   methods: {
     displayOptions() {
       this.optVisible = !this.optVisible;
       this.optBtnTxt = this.optVisible ? 'Masquer' : 'Options';
+    },
+    getWindowDims() {
+      const width =
+        window.innerWidth ||
+        document.documentElement.clientWidth ||
+        document.body.clientWidth;
+      const height =
+        window.innerHeight ||
+        document.documentElement.clientHeight ||
+        document.body.clientHeight;
+      return {width: width, height: height};
     },
   },
 };
