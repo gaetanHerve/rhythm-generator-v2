@@ -1,17 +1,18 @@
 <template>
   <div class="w3-row">
-    <div id="showOptions" class="w3-col m2">
+    <div id="showOptions" class="w3-col m2 s2">
         <button
           class="w3-btn w3-round w3-white w3-border w3-border-teal"
           @click="displayOptions"
         > {{ optBtnTxt }} </button>
     </div>
 
-    <div id="logoSection" class="w3-col m6">
-      <img alt="logo" src="@/assets/logo_small2.png" style="width:200px" />
+    <div id="logoSection" class="w3-col l6 m4 s2">
+      <img v-if="minLogo" alt="minLogo" src="@/assets/logo_min.png" style="max-width:75px" />
+      <img v-else alt="smallLogo" src="@/assets/logo_small.png" style="max-width:200px" />
     </div>
 
-    <div id="generate" class="w3-col m2">
+    <div id="generate" class="w3-col m2 s2">
       <button
         class="w3-btn w3-round w3-teal"
         @click="newSequence=true"
@@ -70,12 +71,15 @@ export default {
       optBtnTxt: 'Options',
       newSequence: false,
       windowDims: null,
+      minLogo: false,
     };
   },
   created() {
     this.windowDims = this.getWindowDims();
+    this.isMinLogo();
     window.addEventListener('resize', () => {
       this.windowDims = this.getWindowDims();
+      this.isMinLogo();
     });
   },
   methods: {
@@ -94,6 +98,9 @@ export default {
         document.body.clientHeight;
       return {width: width, height: height};
     },
+    isMinLogo() {
+      this.minLogo = this.windowDims.width <= 600;
+    }
   },
 };
 </script>
