@@ -2,6 +2,7 @@
   <div class="w3-row">
     <div id="showOptions" class="w3-col m2 s2">
         <button
+          id="showOptionsBtn"
           class="w3-btn w3-round w3-white w3-border w3-border-teal"
           @click="displayOptions"
         > {{ optBtnTxt }} </button>
@@ -14,6 +15,7 @@
 
     <div id="generate" class="w3-col m2 s2">
       <button
+        id="generateBtn"
         class="w3-btn w3-round w3-teal"
         @click="newSequence=true"
       > Générer </button>
@@ -75,14 +77,33 @@ export default {
     };
   },
   created() {
-    this.windowDims = this.getWindowDims();
-    this.isMinLogo();
-    window.addEventListener('resize', () => {
-      this.windowDims = this.getWindowDims();
-      this.isMinLogo();
-    });
+    this.getWindowDimsOnResize();
+    this.closeOptPanelOnClickOutside()
   },
   methods: {
+    getWindowDimsOnResize() {
+      this.windowDims = this.getWindowDims();
+      this.isMinLogo();
+      window.addEventListener('resize', () => {
+        this.windowDims = this.getWindowDims();
+        this.isMinLogo();
+      });
+    },
+    /**
+     * If options panel is visible,
+     * by clicking outside options panel, options button or generate button,
+     * closes options panel
+     */
+    closeOptPanelOnClickOutside() {
+      window.addEventListener('click', (event) => {
+      if (this.optVisible && !['showOptionsBtn', 'generateBtn'].includes(event.target.id)) {
+        const optPanel = document.getElementById('optPanelSection');
+        if (!optPanel.contains(event.target)) {
+          this.displayOptions();
+        }
+      }
+    });
+    },
     displayOptions() {
       this.optVisible = !this.optVisible;
       this.optBtnTxt = this.optVisible ? 'Masquer' : 'Options';

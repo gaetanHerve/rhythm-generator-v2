@@ -151,18 +151,6 @@ export default {
       },
     };
   },
-  created() {
-    // const appDiv = document.getElementById('app');
-    window.addEventListener('click', (event) => {
-      console.log('target id: ', event.target.id);
-      if (this.optVisible) {
-        if (this.optVisible && event.target.id != 'optPanelSection') {
-          console.log('closing panel');
-          this.displayOptions();
-        }
-      }
-    });
-  },
   methods: {
     updateRhytmData() {
       this.$emit("rhythmdatadto", this.rhythmDataDTO);
