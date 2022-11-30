@@ -27,12 +27,13 @@
     </select>
   </div>
 
-  <div v-if="rhythmDataDTO.options.ternary" class="option-element">
+  <!-- TERNARY -->
+  <div v-show="ternaryByDefault" class="option-element">
     <input
       id="ternary"
       type="checkbox"
-      :value="rhythmDataDTO.options.ternary"
-      @change="updateRhytmData"
+      v-model="rhythmDataDTO.options.ternary"
+      @change="changeSignature"
     />
     <label for="ternary">ternaire</label>
   </div>
@@ -61,7 +62,7 @@
       <option
         v-for="minimalValue in minimalValues"
         :key="minimalValue"
-        :value="rhythmDataDTO.options.minimalValue"
+        :value="minimalValue"
       >
       {{ durationsDict[minimalValue] }}
       </option>
@@ -147,9 +148,13 @@ export default {
         4: 'noire',
         8: 'croche',
         16:'double',
-        32:'triple', 
+        32:'triple',
       },
+      ternaryByDefault: false,
     };
+  },
+  created() {
+    this.setDefaultPulse();
   },
   methods: {
     updateRhytmData() {
@@ -166,7 +171,10 @@ export default {
       this.rhythmDataDTO.options.minimalValue = value <= 32 ? value : 32;
     },
     setDefaultPulse() {
-      this.rhythmDataDTO.options.ternary = this.isSignatureTernaryByDefault();
+      this.ternaryByDefault = this.isSignatureTernaryByDefault();
+      if (!this.ternaryByDefault) {
+        this.rhythmDataDTO.options.ternary = false;
+      }
     },
     isSignatureTernaryByDefault() {
       return this.rhythmDataDTO.signature.numBeats % 3 == 0 && this.rhythmDataDTO.signature.beatValue == 8;
