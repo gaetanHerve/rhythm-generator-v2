@@ -1,6 +1,6 @@
 <template>
 
-  <div id="displaySection" style="margin: 15px"></div>
+  <div id="displaySection"></div>
 
 </template>
 
@@ -23,7 +23,7 @@ export default {
     return {
       barWidth: 400,
       nbBarsPerLine: 1,
-      sizeReduction: 20,
+      sizeReduction: 10, // in percents
       sequence: null,
       signature: null,
     };
@@ -141,11 +141,8 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-/* @font-face {
-  font-family: "Musisync-KVLZ";
-  src: local("Musisync-KVLZ"),   url(./fonts/Musisync/Musisync-KVLZ.ttf) format("truetype");
-} */
+  #displaySection {
+    margin: 15px;
+  }
 </style>
