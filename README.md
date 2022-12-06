@@ -9,8 +9,8 @@ This is a beta version.
 
 ## Screenshots
 
-<img src=./public/screenshots/rhythm-generator1.png alt="screenshot 1" height="200"/>
-<img src=./public/screenshots/rhythm-generator2.png alt="screenshot 2" height="200"/>
+<img src=./public/screenshots/rhythm-generator_screenshot_1.png alt="screenshot 1" height="200"/>
+<img src=./public/screenshots/rhythm-generator_screenshot_2.png alt="screenshot 2" height="200"/>
 
 ## How to use rhythm-generator
 
